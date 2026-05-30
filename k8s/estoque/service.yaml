@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: estoque
+  namespace: pedidos-veloz
+  labels:
+    app: estoque
+spec:
+  type: ClusterIP
+  selector:
+    app: estoque
+  ports:
+    - port: 3003
+      targetPort: 3003
+      protocol: TCP
