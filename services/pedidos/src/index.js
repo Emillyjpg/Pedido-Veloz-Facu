@@ -68,8 +68,10 @@ app.patch('/api/pedidos/:id/status', async (req, res) => {
   res.json(rows[0]);
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀 pedidos service listening on port ${PORT}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`🚀 pedidos service listening on port ${PORT}`);
+  });
+}
 
 module.exports = app;

@@ -49,8 +49,10 @@ app.use(createProxyMiddleware({
   pathFilter: '/api/estoque',
 }));
 
-app.listen(PORT, () => {
-  console.log(`🚀 api-gateway listening on port ${PORT}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`🚀 api-gateway listening on port ${PORT}`);
+  });
+}
 
 module.exports = app;
