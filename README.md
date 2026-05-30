@@ -883,12 +883,6 @@ Arquivo `.env.example` na raiz do projeto:
 
 ---
 
-## Vídeo Pitch
-
-[INSERIR LINK YOUTUBE]
-
----
-
 ## Autora
 
 **Emilly Sousa**
